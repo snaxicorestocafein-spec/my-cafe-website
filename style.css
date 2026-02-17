@@ -1,0 +1,53 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Satisfy', cursive;
+  background: #0F2E1D; /* dark coffee background */
+  color: #DFFFE2;       /* soft mint text */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Animated Text */
+.animated-text {
+  font-size: 48px;
+  background: linear-gradient(90deg, #145A32, #DFFFE2, #203A43, #145A32);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s linear infinite;
+}
+
+/* Gradient Animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #F8F1E5;
+}
+
+footer a {
+  color: #DFFFE2;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
